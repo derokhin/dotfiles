@@ -1,0 +1,13 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen%an%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+	lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %Cgreen%an%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --all
+	st = status
+	aa = add .
+	cm = commit -m
+	pf = pull --ff-only	
+
+[user]
+	name = Dmitry Erokhin
+	email = dimunech@gmail.com 
+[core]
+	editor = vim
