@@ -7,7 +7,12 @@
 	pf = pull --ff-only	
 
 [user]
-	name = Dmitry Erokhin
-	email = dimunech@gmail.com 
+	name = Dmitrii Erokhin
+	email = dimunech@gmail.com
 [core]
 	editor = vim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
